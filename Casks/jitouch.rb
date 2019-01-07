@@ -8,8 +8,10 @@ cask 'jitouch' do
     url 'http://www.jitouch.com/jitouch_mavericks.zip'
   elsif MacOS.version <= :el_capitan
     url 'http://www.jitouch.com/jitouch_el_capitan.zip'
-  else
+  elsif MacOS.version <= :sierra
     url 'http://www.jitouch.com/jitouch_sierra.zip'
+  else
+    url 'https://www.jitouch.com/jitouch_mojave.zip'
   end
 
   name 'jitouch'
